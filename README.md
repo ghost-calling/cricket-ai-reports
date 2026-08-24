@@ -9,7 +9,7 @@ Note: free hosting tier spins down with inactivity — first request may take 30
 
 ## What it does 
 
-This project scrapes live match data from Cricbuzz. It takes match datas like both team's scores , match status with ground and date informations and generated a AI report on the match.
+This project scrapes live match data from Cricbuzz. By capturing real-time metrics - including team scores , match status , venue and date information. It automatically generates an AI-powered match report.
 
 ## Architecture
 Cricbuzz → scraper.py → SQLite database → Gemini API → Flask API
