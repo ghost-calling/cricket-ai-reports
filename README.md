@@ -3,6 +3,10 @@
 
 This is a simple AI assisted scraper project that scrapes live cricket data.
 
+**Live demo:** https://cricket-ai-reports.onrender.com/scrape (then /report/1, /report/2, etc.)
+
+Note: free hosting tier spins down with inactivity — first request may take 30-50 seconds to wake up.
+
 ## What it does 
 
 This project scrapes live match data from Cricbuzz. It takes match datas like both team's scores , match status with ground and date informations and generated a AI report on the match.
