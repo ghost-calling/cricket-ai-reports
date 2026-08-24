@@ -1,7 +1,9 @@
 import sqlite3
 from contextlib import contextmanager
+import os
 
 DB_PATH = "data/matches.db"
+os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
 @contextmanager
 def get_db():
