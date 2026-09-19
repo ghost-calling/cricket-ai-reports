@@ -35,5 +35,14 @@ def match_report(match_id):
     report = generate_report(match)
     return jsonify({"match_id": match_id, "report": report})
 
+@app.route("/")
+def home():
+    return jsonify({
+        "status": "live",
+        "project": "cricket-ai-reports",
+        "endpoints": ["/scrape", "/report/<match_id>"],
+        "github": "https://github.com/ghost-calling/cricket-ai-reports"
+    })
+
 if __name__ == "__main__":
     app.run(debug=True)
